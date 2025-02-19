@@ -9,3 +9,8 @@ function getComputerChoice(){
       return "scissors";
   }
 }
+
+function getHumanChoice(){
+  let humainChoice = prompt("Please enter your choice: rock, paper or scissors.");
+  return humainChoice;
+}
