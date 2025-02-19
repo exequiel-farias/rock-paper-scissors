@@ -50,7 +50,17 @@ function playRound(humanChoice, computerChoice){
 let humanScore = 0;
 let computerScore = 0;
 
-const humanSelection = getHumanChoice();
-const computerSelection = getComputerChoice();
+function playGame(){
 
-console.log(playRound(humanSelection, computerSelection));
+  for(let i=0; i<5; i++){
+    let humanSelection = getHumanChoice();
+    let computerSelection = getComputerChoice();
+    console.log(playRound(humanSelection, computerSelection));
+  }
+
+  if(humanScore > computerScore){
+    console.log("You win the game!");
+  }else console.log("You lose the game!");
+}
+
+playGame();
